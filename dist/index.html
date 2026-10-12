@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b0c0e" />
-  <meta name="description" content="Dongyu (Don) Han researches transfer learning, interpretable leak diagnosis, and sensor selection for water networks." />
+  <meta name="description" content="Dongyu (Don) Han is a research engineer working across machine learning, scientific computing, and sensing. Explore his background, research, and software projects." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Dongyu Han — Research in intelligent infrastructure" />
-  <meta property="og:description" content="From hydraulic signals to more reliable decisions. Research, publications, and engineering work by Dongyu Han." />
+  <meta property="og:title" content="Dongyu Han — Machine learning, computation, and sensing" />
+  <meta property="og:description" content="Meet Don and explore his research on learning from limited measurements, interpretable models, and sensor selection." />
   <link rel="canonical" href="https://donquiry.com/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="/styles.css?v=20261012-evidencegraph" />
+  <link rel="stylesheet" href="/styles.css?v=20261012-about-background" />
   <script src="/app.js" defer></script>
-  <title>Dongyu Han — Research in intelligent infrastructure</title>
+  <title>Dongyu Han — Machine learning, computation, and sensing</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,7 +20,7 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="#top" aria-label="Dongyu Han, back to top">Dongyu Han<span class="brand-dot">.</span></a>
-      <nav class="site-nav" aria-label="Main navigation"><a href="#research">Research</a><a href="#publication">Publication</a><a href="#experience">Experience</a><a href="#evidencegraph">EvidenceGraph</a></nav>
+      <nav class="site-nav" aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#publication">Publication</a><a href="#evidencegraph">EvidenceGraph</a></nav>
       <a class="header-contact" href="mailto:dhanaf@connect.ust.hk">Contact <span aria-hidden="true">↗</span></a>
     </div>
   </header>
@@ -29,33 +29,36 @@
       <div class="shell hero-content">
         <div class="hero-copy reveal">
           <p class="overline hero-overline">Dongyu “Don” Han <span class="overline-divider">/</span> Research engineer</p>
-          <h1 id="hero-title">A network is vast.<br /><span>Our view is small.</span></h1>
-          <p class="hero-lede">A rapid valve closure launches a transient pressure wave through the pipes. We record the resulting pressure response at only a handful of sensors. My research asks what those signals can reveal about a leak—and where we should measure them.</p>
-          <div class="hero-actions"><a class="pill-button pill-button-light" href="#research">Follow the story <span aria-hidden="true">↓</span></a><a class="subtle-link" href="#evidencegraph">Explore a side project <span aria-hidden="true">↘</span></a></div>
+          <h1 id="hero-title">Hi, I’m Don.<br /><span>I build models for limited data.</span></h1>
+          <p class="hero-lede">I’m a research engineer with a computer science background. I study how machine learning can draw reliable conclusions from limited measurements—and how computation can help us decide what to measure next.</p>
+          <div class="hero-actions"><a class="pill-button pill-button-light" href="#about">Get to know me <span aria-hidden="true">↓</span></a><a class="subtle-link" href="#research">See the research <span aria-hidden="true">↘</span></a></div>
         </div>
         <figure class="hero-figure reveal">
-          <div class="hero-image-wrap diagram-panel">
-            <svg class="beacon-diagram" viewBox="0 0 1000 700" role="img" aria-labelledby="beacon-title beacon-desc">
-              <title id="beacon-title">A water network with eight sensor positions</title>
-              <desc id="beacon-desc">A simplified view of the Beacon Hill pipe branches. Eight yellow squares mark measurement locations along the network.</desc>
-              <g class="diagram-branch">
-                <path d="M100 545V112H780L842 165V540L870 575V640H830"/>
-                <path d="M317 178V271H345V150H723L790 201V440L830 485V640"/>
-                <path d="M680 112V150"/>
-              </g>
-              <g class="diagram-node"><circle cx="100" cy="545" r="12"/><circle cx="317" cy="178" r="12"/><circle cx="680" cy="112" r="12"/><circle cx="830" cy="640" r="12"/></g>
-              <g class="diagram-sensor"><rect x="87" y="264" width="26" height="26" rx="4"/><rect x="530" y="99" width="26" height="26" rx="4"/><rect x="740" y="99" width="26" height="26" rx="4"/><rect x="829" y="207" width="26" height="26" rx="4"/><rect x="695" y="137" width="26" height="26" rx="4"/><rect x="817" y="544" width="26" height="26" rx="4"/><rect x="530" y="137" width="26" height="26" rx="4"/><rect x="304" y="225" width="26" height="26" rx="4"/></g>
-              <g class="diagram-label"><text x="79" y="598">INLET</text><text x="669" y="83">PIPE NETWORK</text></g>
-            </svg>
+          <div class="hero-image-wrap research-canvas">
+            <div class="canvas-top"><span>RESEARCH QUESTIONS</span><span>01 — 03</span></div>
+            <div class="canvas-body" aria-label="Three connected questions: learning from limited data, understanding a model's decisions, and choosing useful measurements">
+              <div class="canvas-question canvas-question-primary"><span class="canvas-index">01</span><strong>What can we learn from limited data?</strong><svg viewBox="0 0 320 64" aria-hidden="true"><path d="M0 45C20 45 20 45 35 45S51 17 65 17S80 48 95 48S110 29 126 29S141 53 158 53S174 20 190 20S207 38 225 38S242 12 260 12S282 48 320 48"/></svg></div>
+              <div class="canvas-question"><span class="canvas-index">02</span><strong>Why did the model decide that?</strong><div class="canvas-attribution" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+              <div class="canvas-question"><span class="canvas-index">03</span><strong>Which measurements matter most?</strong><div class="canvas-selection" aria-hidden="true"><i></i><i class="selected"></i><i></i><i></i><i class="selected"></i><i></i><i class="selected"></i></div></div>
+            </div>
           </div>
-          <figcaption><strong>Eight measurement points.</strong><span>Each yellow square marks a pressure sensor.</span></figcaption>
+          <figcaption><strong>One line of inquiry.</strong><span>Learning, explaining, and selecting under constraints.</span></figcaption>
         </figure>
       </div>
-      <div class="shell hero-bottom"><span>HKUST MPhil · 2026</span><span class="hero-bottom-line"></span><span>Scroll to explore ↓</span></div>
+      <div class="shell hero-bottom"><span>Computer Science BEng · HKUST MPhil</span><span class="hero-bottom-line"></span><span>Scroll to explore ↓</span></div>
+    </section>
+
+    <section class="about-section section-pad" id="about" aria-labelledby="about-title">
+      <div class="shell about-grid reveal"><p class="overline">About me</p><div><h2 id="about-title">Computer science is my starting point.<br /><span>Real systems keep me honest.</span></h2><p>I’m Dongyu Han, or Don. I studied Computer Science &amp; Technology for my BEng, then completed an MPhil at HKUST, where I applied machine learning to sensing problems in water networks. I now work on algorithms for pipeline condition assessment.</p><p>Across software engineering and applied research, I keep returning to the same questions: what can we learn from scarce data, how can we understand a model’s decision, and which measurements are worth making?</p></div></div>
+      <div class="shell about-history" id="experience" aria-labelledby="experience-title">
+        <div class="about-history-heading reveal"><p class="overline">Background</p><h3 id="experience-title">What I’ve worked on.</h3></div>
+        <div class="experience-list"><article class="experience-item reveal"><span class="experience-date">2026 — Present</span><div><h3>IT Engineer · Algorithm Design</h3><p class="experience-place">Hyele Limited · Hong Kong Science Park</p><p>Develop machine-learning algorithms for real-time pipeline condition assessment, from transient-signal processing and model validation to neural-network inference and sensor optimization.</p></div></article><article class="experience-item reveal"><span class="experience-date">2023 — 2026</span><div><h3>MPhil Researcher · Applied AI for Smart Infrastructure</h3><p class="experience-place">HKUST · Civil and Environmental Engineering</p><p>Built reproducible simulation-to-field experiments for leak diagnosis and a contrastive, differentiable framework for sparse sensor selection.</p></div></article><article class="experience-item reveal"><span class="experience-date">2022 — 2023</span><div><h3>Backend Engineer · ML + Backend</h3><p class="experience-place">Yuzhi Tech Co., Ltd. · Beijing</p><p>Built Java/Spring Boot services and integrated ML inference into a production digital-human system; contributed to a secondary-market knowledge graph project.</p></div></article></div>
+        <div class="education-line reveal"><strong>Education</strong><span>MPhil, Civil &amp; Environmental Engineering · HKUST, 2026<br />BEng, Computer Science &amp; Technology · North China University of Technology, 2022</span></div>
+      </div>
     </section>
 
     <section class="intro-section section-pad" id="research" aria-labelledby="research-title">
-      <div class="shell intro-grid reveal"><p class="overline">The challenge</p><div><h2 id="research-title">The network is mapped.<br /><span>The leak is not.</span></h2><p>A leak can change how transient pressure waves reflect and scatter through the pipes. But labeled field measurements are scarce, and every additional sensor costs money and effort. That leads to two connected questions: how can a model learn from limited measured responses, and where should we place the sensors?</p></div></div>
+      <div class="shell intro-grid reveal"><p class="overline">Research in practice</p><div><h2 id="research-title">A physical testbed<br /><span>for computational questions.</span></h2><p>Water distribution networks gave me a concrete setting for these questions. A leak changes how transient pressure waves travel and reflect, yet labeled field measurements are scarce and sensors cannot go everywhere. My two research threads ask how to transfer knowledge from simulation to measured responses, and how to choose a useful subset of sensor locations.</p></div></div>
     </section>
 
     <section class="research-chapter chapter-transfer section-pad" aria-labelledby="transfer-title">
@@ -124,8 +127,6 @@
 
     <section class="publication-section section-pad" id="publication" aria-labelledby="publication-title"><div class="shell publication-grid"><div class="reveal"><p class="overline">Publication</p><h2 id="publication-title">The work<br /><span>behind the story.</span></h2><p>The simulation-to-field study is published in <i>Water Research</i>. If you want the methods, assumptions, and full results, start here.</p></div><article class="publication-card reveal"><p>Water Research · 2026</p><h3>Explainable simulation-to-field transfer learning for transient-based leak detection in water distribution networks</h3><p>Dongyu Han, Oussama Choura, Muhammad Waqar, Moez Louati, Dai Linhan &amp; Mohamed Salah Ghidaoui</p><a class="inline-link" href="https://doi.org/10.1016/j.watres.2026.126464" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a></article></div></section>
 
-    <section class="experience-section section-pad" id="experience" aria-labelledby="experience-title"><div class="shell"><div class="experience-heading reveal"><p class="overline">Experience</p><h2 id="experience-title">From experiment<br /><span>to implementation.</span></h2></div><div class="experience-list"><article class="experience-item reveal"><span class="experience-date">2026 — Present</span><div><h3>IT Engineer · Algorithm Design</h3><p class="experience-place">Hyele Limited · Hong Kong Science Park</p><p>Develop machine-learning algorithms for real-time pipeline condition assessment, from transient-signal processing and model validation to neural-network inference and sensor optimization.</p></div></article><article class="experience-item reveal"><span class="experience-date">2023 — 2026</span><div><h3>MPhil Researcher · Applied AI for Smart Infrastructure</h3><p class="experience-place">HKUST · Civil and Environmental Engineering</p><p>Built reproducible simulation-to-field experiments for leak diagnosis and a contrastive, differentiable framework for sparse sensor selection.</p></div></article><article class="experience-item reveal"><span class="experience-date">2022 — 2023</span><div><h3>Backend Engineer · ML + Backend</h3><p class="experience-place">Yuzhi Tech Co., Ltd. · Beijing</p><p>Built Java/Spring Boot services and integrated ML inference into a production digital-human system; contributed to a secondary-market knowledge graph project.</p></div></article></div><div class="education-line reveal"><strong>Education</strong><span>MPhil, Civil &amp; Environmental Engineering · HKUST, 2026<br />BEng, Computer Science &amp; Technology · North China University of Technology, 2022</span></div></div></section>
-
     <section class="evidence-section section-pad" id="evidencegraph" aria-labelledby="evidence-title">
       <div class="shell evidence-grid">
         <div class="evidence-copy reveal">
@@ -161,8 +162,8 @@
       </div>
     </section>
 
-    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid reveal"><div><p class="overline">What comes next</p><h2 id="contact-title">Let’s ask<br /><span>better questions.</span></h2></div><div><p>I’m interested in PhD opportunities around trustworthy machine learning, sensing, scientific ML, and intelligent infrastructure. If our questions overlap, I’d love to talk.</p><div class="contact-actions"><a href="mailto:dhanaf@connect.ust.hk">Email me <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/don-h-7abb80296/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></div></section>
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid reveal"><div><p class="overline">Get in touch</p><h2 id="contact-title">Let’s ask<br /><span>better questions.</span></h2></div><div><p>I’m always interested in thoughtful conversations about machine learning, scientific computing, optimization, and how these ideas work with limited real-world data. If our questions overlap, I’d love to talk.</p><div class="contact-actions"><a href="mailto:dhanaf@connect.ust.hk">Email me <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/don-h-7abb80296/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></div></section>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><span>© <span id="year">2026</span> Dongyu Han</span><span>Research in intelligent infrastructure.</span><a href="#top">Back to top ↑</a></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><span>© <span id="year">2026</span> Dongyu Han</span><span>Machine learning · Computation · Sensing</span><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
