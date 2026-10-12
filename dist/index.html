@@ -10,7 +10,7 @@
   <meta property="og:description" content="From hydraulic signals to more reliable decisions. Research, publications, and engineering work by Dongyu Han." />
   <link rel="canonical" href="https://donquiry.com/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="/styles.css?v=20261012-transient" />
+  <link rel="stylesheet" href="/styles.css?v=20261012-evidencegraph" />
   <script src="/app.js" defer></script>
   <title>Dongyu Han — Research in intelligent infrastructure</title>
 </head>
@@ -126,7 +126,40 @@
 
     <section class="experience-section section-pad" id="experience" aria-labelledby="experience-title"><div class="shell"><div class="experience-heading reveal"><p class="overline">Experience</p><h2 id="experience-title">From experiment<br /><span>to implementation.</span></h2></div><div class="experience-list"><article class="experience-item reveal"><span class="experience-date">2026 — Present</span><div><h3>IT Engineer · Algorithm Design</h3><p class="experience-place">Hyele Limited · Hong Kong Science Park</p><p>Develop machine-learning algorithms for real-time pipeline condition assessment, from transient-signal processing and model validation to neural-network inference and sensor optimization.</p></div></article><article class="experience-item reveal"><span class="experience-date">2023 — 2026</span><div><h3>MPhil Researcher · Applied AI for Smart Infrastructure</h3><p class="experience-place">HKUST · Civil and Environmental Engineering</p><p>Built reproducible simulation-to-field experiments for leak diagnosis and a contrastive, differentiable framework for sparse sensor selection.</p></div></article><article class="experience-item reveal"><span class="experience-date">2022 — 2023</span><div><h3>Backend Engineer · ML + Backend</h3><p class="experience-place">Yuzhi Tech Co., Ltd. · Beijing</p><p>Built Java/Spring Boot services and integrated ML inference into a production digital-human system; contributed to a secondary-market knowledge graph project.</p></div></article></div><div class="education-line reveal"><strong>Education</strong><span>MPhil, Civil &amp; Environmental Engineering · HKUST, 2026<br />BEng, Computer Science &amp; Technology · North China University of Technology, 2022</span></div></div></section>
 
-    <section class="evidence-section section-pad" id="evidencegraph" aria-labelledby="evidence-title"><div class="shell evidence-grid"><div class="reveal"><p class="overline">A project alongside the research</p><h2 id="evidence-title">Read the paper.<br /><span>Follow the evidence.</span></h2></div><div class="evidence-copy reveal"><p>EvidenceGraph is a research-paper reading prototype I’m building to make technical papers easier to explore. It connects answers to specific passages and relationships, so readers can inspect where a claim came from.</p><p class="evidence-note">A tool for understanding a paper—not a replacement for reading it critically.</p><a class="pill-button pill-button-dark" href="https://evidence.donquiry.com/" target="_blank" rel="noopener noreferrer">Explore EvidenceGraph <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="evidence-section section-pad" id="evidencegraph" aria-labelledby="evidence-title">
+      <div class="shell evidence-grid">
+        <div class="evidence-copy reveal">
+          <p class="overline">Independent project</p>
+          <h2 id="evidence-title">EvidenceGraph<span>.</span></h2>
+          <p>A web app for exploring research papers. Upload a PDF, ask a question, inspect the source passages behind the answer, and browse the paper’s extracted relationships.</p>
+          <a class="pill-button pill-button-dark" href="https://evidence.donquiry.com/" target="_blank" rel="noopener noreferrer">Explore EvidenceGraph <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="evidence-figure reveal">
+          <div class="evidence-figure-top"><span>Inside a paper</span><span>Sources &amp; connections</span></div>
+          <svg class="evidence-node-graph" viewBox="0 0 640 450" role="img" aria-labelledby="evidence-graph-title evidence-graph-desc">
+            <title id="evidence-graph-title">An illustrative evidence graph</title>
+            <desc id="evidence-graph-desc">A paper connects to source passages. The passages connect to concepts and an answer, while a relationship connects the concepts.</desc>
+            <g class="evidence-edge">
+              <path d="M107 225 254 112M107 225 254 338M254 112 465 96M254 338 465 240M465 96 465 240M254 112 528 353M254 338 528 353" />
+            </g>
+            <g class="evidence-edge-dot"><circle cx="181" cy="168" r="4"/><circle cx="181" cy="282" r="4"/><circle cx="359" cy="104" r="4"/><circle cx="359" cy="289" r="4"/></g>
+            <g class="evidence-node evidence-node-paper"><circle cx="107" cy="225" r="34"/><text x="107" y="231" text-anchor="middle">PDF</text></g>
+            <g class="evidence-node evidence-node-source"><circle cx="254" cy="112" r="26"/><circle cx="254" cy="338" r="26"/></g>
+            <g class="evidence-node evidence-node-concept"><circle cx="465" cy="96" r="24"/><circle cx="465" cy="240" r="24"/></g>
+            <g class="evidence-node evidence-node-answer"><circle cx="528" cy="353" r="34"/><text x="528" y="359" text-anchor="middle">A</text></g>
+            <g class="evidence-graph-label">
+              <text x="107" y="281" text-anchor="middle">Paper</text>
+              <text x="254" y="67" text-anchor="middle">Passage</text>
+              <text x="254" y="394" text-anchor="middle">Passage</text>
+              <text x="465" y="52" text-anchor="middle">Entity</text>
+              <text x="465" y="295" text-anchor="middle">Entity</text>
+              <text x="528" y="408" text-anchor="middle">Answer</text>
+            </g>
+          </svg>
+          <figcaption>Illustrative connections, not a graph from a specific paper.</figcaption>
+        </figure>
+      </div>
+    </section>
 
     <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid reveal"><div><p class="overline">What comes next</p><h2 id="contact-title">Let’s ask<br /><span>better questions.</span></h2></div><div><p>I’m interested in PhD opportunities around trustworthy machine learning, sensing, scientific ML, and intelligent infrastructure. If our questions overlap, I’d love to talk.</p><div class="contact-actions"><a href="mailto:dhanaf@connect.ust.hk">Email me <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/don-h-7abb80296/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></div></section>
   </main>
