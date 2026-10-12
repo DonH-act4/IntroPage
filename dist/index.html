@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f1ea" />
+    <meta name="description" content="Dongyu (Don) Han is a research engineer working on explainable transfer learning, sensor optimization, and evidence-grounded AI." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dongyu Han — Research, sensing & systems" />
+    <meta property="og:description" content="Research at the intersection of machine learning, physical infrastructure, and evidence-grounded AI." />
+    <link rel="canonical" href="https://donquiry.com/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+    <title>Dongyu Han — Research, sensing & systems</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="Dongyu Han, back to top">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="brand-name">DON<span class="brand-name-muted">QUIRY</span><span class="brand-period">.</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#research">Research</a>
+          <a href="#publication">Publication</a>
+          <a href="#experience">Experience</a>
+          <a href="#evidencegraph">Project</a>
+        </nav>
+        <a class="header-contact" href="mailto:dhanaf@connect.ust.hk">Get in touch <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> DONGYU “DON” HAN <span class="eyebrow-separator">/</span> RESEARCH ENGINEER</p>
+            <h1 id="hero-title">From signals<br />to <em>systems.</em></h1>
+            <p class="hero-lede">I study how machine learning can make physical infrastructure more observable—and how evidence can make AI more accountable.</p>
+            <p class="hero-detail">My work moves between hydraulic transients, transfer learning, interpretable models, and tools that help researchers think with complex papers.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="https://doi.org/10.1016/j.watres.2026.126464" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-meta"><span>HKUST MPhil · 2026</span><span class="meta-dot" aria-hidden="true"></span><span>Hong Kong</span></div>
+          </div>
+
+          <div class="visual-card visual--transfer" id="research-visual">
+            <div class="visual-topline"><span class="visual-status"><span class="status-light"></span> RESEARCH FIELD NOTES</span><span>NO. 01 / 02</span></div>
+            <div class="visual-stage">
+              <svg class="network-graphic" viewBox="0 0 620 460" role="img" aria-labelledby="network-title network-desc">
+                <title id="network-title">Conceptual water-network signal diagram</title>
+                <desc id="network-desc">An illustrative pipe network with moving signals and selected sensing points. It is not a map of the study sites.</desc>
+                <defs>
+                  <linearGradient id="network-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#42c8ae"/><stop offset="1" stop-color="#a8edd8"/></linearGradient>
+                  <filter id="node-glow"><feGaussianBlur stdDeviation="7"/></filter>
+                </defs>
+                <g class="grid-lines" aria-hidden="true"><path d="M0 92H620M0 184H620M0 276H620M0 368H620M103 0V460M206 0V460M309 0V460M412 0V460M515 0V460" /></g>
+                <g class="network-branches" aria-hidden="true">
+                  <path d="M58 230H155L218 140H347L420 87H558" />
+                  <path d="M155 230L226 315H357L432 376H560" />
+                  <path d="M218 140L291 230H425L558 230" />
+                  <path d="M347 140L425 230L432 376" />
+                  <path d="M226 315L291 230" />
+                </g>
+                <g class="signal-traces" aria-hidden="true">
+                  <path class="signal-trace signal-trace-one" d="M58 230H155L218 140H347L420 87H558" />
+                  <path class="signal-trace signal-trace-two" d="M58 230H155L226 315H357L432 376H560" />
+                  <path class="signal-trace signal-trace-three" d="M155 230L218 140L291 230H425L558 230" />
+                </g>
+                <g class="junctions" aria-hidden="true"><circle cx="58" cy="230" r="6"/><circle cx="155" cy="230" r="6"/><circle cx="218" cy="140" r="6"/><circle cx="226" cy="315" r="6"/><circle cx="291" cy="230" r="6"/><circle cx="347" cy="140" r="6"/><circle cx="357" cy="315" r="6"/><circle cx="425" cy="230" r="6"/><circle cx="420" cy="87" r="6"/><circle cx="432" cy="376" r="6"/><circle cx="558" cy="87" r="6"/><circle cx="558" cy="230" r="6"/><circle cx="560" cy="376" r="6"/></g>
+                <g class="sensing-points" aria-hidden="true"><circle class="sensor sensor-a" cx="155" cy="230" r="15"/><circle class="sensor sensor-b" cx="218" cy="140" r="15"/><circle class="sensor sensor-c" cx="226" cy="315" r="15"/><circle class="sensor sensor-d" cx="347" cy="140" r="15"/><circle class="sensor sensor-e" cx="357" cy="315" r="15"/><circle class="sensor sensor-f" cx="425" cy="230" r="15"/><circle class="sensor sensor-g" cx="432" cy="376" r="15"/><circle class="sensor-core" cx="155" cy="230" r="4"/><circle class="sensor-core" cx="218" cy="140" r="4"/><circle class="sensor-core" cx="226" cy="315" r="4"/><circle class="sensor-core" cx="347" cy="140" r="4"/><circle class="sensor-core" cx="357" cy="315" r="4"/><circle class="sensor-core" cx="425" cy="230" r="4"/><circle class="sensor-core" cx="432" cy="376" r="4"/></g>
+                <g class="visual-labels" aria-hidden="true"><text x="56" y="203">INPUT</text><text x="482" y="205">OBSERVE</text><text x="433" y="62">SENSOR 04</text></g>
+              </svg>
+              <span class="visual-coordinate" aria-hidden="true">22°19′N &nbsp; 114°10′E</span>
+            </div>
+            <div class="visual-bottom">
+              <div class="visual-tabs" role="group" aria-label="Explore research themes">
+                <button type="button" class="visual-tab is-active" data-visual-mode="transfer" aria-pressed="true">01 / Adapt</button>
+                <button type="button" class="visual-tab" data-visual-mode="sensing" aria-pressed="false">02 / Sense</button>
+              </div>
+              <p class="visual-caption" id="visual-caption" aria-live="polite">Can a model trained on simulated waves learn to read the real ones?</p>
+            </div>
+            <div class="visual-footnote">Conceptual illustration · not experimental data</div>
+          </div>
+        </div>
+        <div class="shell hero-index"><span>01 — RESEARCH / ENGINEERING</span><span class="hero-index-line"></span><span>SCROLL TO EXPLORE ↓</span></div>
+      </section>
+
+      <section class="research-section section-pad" id="research" aria-labelledby="research-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="section-kicker">RESEARCH / 01</p>
+            <div class="section-heading-grid"><h2 id="research-title">Two constraints.<br /><em>One physical world.</em></h2><p>My MPhil research asks how to learn from imperfect simulations and how to choose the few measurements that matter most. Both questions start with the same reality: field data is scarce, noisy, and expensive to collect.</p></div>
+          </div>
+
+          <article class="research-feature research-feature-transfer reveal" aria-labelledby="transfer-title">
+            <div class="feature-index"><span>01</span><span class="feature-index-rule"></span><span>SIMULATION → FIELD</span></div>
+            <div class="feature-body"><div class="feature-copy"><p class="feature-tag">TRANSFER LEARNING · INTERPRETABILITY</p><h3 id="transfer-title">Learning across the<br /><em>reality gap.</em></h3><p>Numerical models make labeled pressure transients plentiful; real leak records do not. I pre-trained leak-diagnostic models on simulated signals, adapted them with limited experimental data, and used Integrated Gradients to inspect which sensor–time regions informed their predictions.</p><p class="feature-nuance">The attribution analysis surfaced physically meaningful later-time, multiply scattered wave information rather than treating the network as a black box.</p><div class="feature-links"><a href="https://doi.org/10.1016/j.watres.2026.126464" target="_blank" rel="noopener noreferrer">Water Research paper <span aria-hidden="true">↗</span></a><span>Beacon Hill case study</span></div></div><div class="feature-figure transfer-figure" aria-label="Illustration of a simulated signal being adapted to a measured field signal"><div class="figure-head"><span>DOMAIN ADAPTATION</span><span>FIG. 01</span></div><div class="wave-stack"><div class="wave-row"><span>SIMULATED</span><svg viewBox="0 0 330 70" aria-hidden="true"><path d="M0 42 C15 42 16 18 29 18 S42 57 55 57 S69 20 82 20 S97 53 110 53 S125 31 139 31 S151 43 166 43 S180 28 192 28 S208 48 221 48 S235 35 249 35 S263 43 277 43 S293 38 307 38 S318 40 330 40"/></svg></div><div class="adapt-arrow"><span></span><strong>FINE-TUNE</strong><span></span></div><div class="wave-row wave-row-field"><span>MEASURED</span><svg viewBox="0 0 330 70" aria-hidden="true"><path d="M0 39 C18 39 21 26 32 27 S48 53 61 49 S76 23 88 28 S105 49 119 45 S134 31 149 34 S164 49 177 42 S191 27 204 33 S220 48 235 45 S249 33 263 37 S281 48 296 42 S315 38 330 39"/></svg></div></div><div class="figure-note"><span>FEATURES CAN TRANSFER.</span><span>ASSUMPTIONS MUST BE TESTED.</span></div></div></div>
+            <div class="feature-result"><span>SELECTED THESIS RESULT</span><strong>13.51 <small>m</small> <span class="result-arrow">→</span> 1.02 <small>m</small></strong><p>Leak-localization MAE, direct test vs. transfer, in the thesis’s 17-scenario Beacon Hill evaluation. Results depend on dataset and experimental setup.</p></div>
+          </article>
+
+          <article class="research-feature research-feature-sensing reveal" aria-labelledby="sensing-title">
+            <div class="feature-index"><span>02</span><span class="feature-index-rule"></span><span>SPARSE OBSERVATION</span></div>
+            <div class="feature-body"><div class="feature-copy"><p class="feature-tag">CONTRASTIVE LEARNING · SENSOR SELECTION</p><h3 id="sensing-title">Learning where<br /><em>to listen.</em></h3><p>When only a few sensors can be deployed, placement becomes part of the learning problem. My Deep Contrastive Sensor Selection framework combines supervised contrastive learning with differentiable Top‑K gating to select sensor subsets for the diagnostic task itself.</p><p class="feature-nuance">The Q‑Leak study compares task-aligned selection with a mutual-information-motivated baseline across sensing budgets and noise levels—while noting that the baseline remains competitive in the hardest low-budget settings.</p><div class="feature-links"><span>MPhil thesis · Chapter 5</span><span>Q‑Leak case study</span></div></div><div class="feature-figure sensing-figure" aria-label="Conceptual illustration of selecting a few sensing points from a network"><div class="figure-head"><span>SENSOR BUDGET</span><span>K = 3 / 7</span></div><div class="sensor-map"><div class="map-line map-line-one"></div><div class="map-line map-line-two"></div><div class="map-line map-line-three"></div><span class="map-node node-one selected">01</span><span class="map-node node-two">02</span><span class="map-node node-three selected">03</span><span class="map-node node-four">04</span><span class="map-node node-five">05</span><span class="map-node node-six selected">06</span><span class="map-node node-seven">07</span></div><div class="figure-note"><span>SELECT A SUBSET.</span><span>PRESERVE THE SIGNAL.</span></div></div></div>
+            <div class="feature-result"><span>SELECTED THESIS RESULT</span><strong>73.93<span class="result-arrow"> → </span>86.62<small>%</small></strong><p>Classification accuracy, baseline vs. DCSS, on simulated Q‑Leak events at SNR = 0 dB with 8 sensors. This is not a field-deployment claim.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="publication-section section-pad" id="publication" aria-labelledby="publication-title"><div class="shell publication-grid"><div class="reveal"><p class="section-kicker">PUBLICATION / 02</p><h2 id="publication-title">Research in<br /><em>the open.</em></h2><p class="publication-intro">The first part of my MPhil work is published in <i>Water Research</i>. The second part, on sensor selection, is developed in my thesis and remains separate from this publication.</p></div><div class="publication-card reveal"><div class="publication-card-top"><span>PEER-REVIEWED ARTICLE</span><span>2026</span></div><h3>Explainable simulation-to-field transfer learning for transient-based leak detection in water distribution networks</h3><p>Dongyu Han, Oussama Choura, Muhammad Waqar, Moez Louati, Dai Linhan &amp; Mohamed Salah Ghidaoui</p><div class="publication-card-bottom"><span><i>Water Research</i> · Volume 305 · Article 126464</span><a href="https://doi.org/10.1016/j.watres.2026.126464" target="_blank" rel="noopener noreferrer" aria-label="Open Water Research article DOI">DOI <span aria-hidden="true">↗</span></a></div></div></div></section>
+
+      <section class="experience-section section-pad" id="experience" aria-labelledby="experience-title"><div class="shell"><div class="section-heading reveal"><p class="section-kicker">EXPERIENCE / 03</p><div class="section-heading-grid"><h2 id="experience-title">Research that<br /><em>meets reality.</em></h2><p>I move between experimental questions and production constraints: designing algorithms, validating them, and turning useful prototypes into working systems.</p></div></div><div class="experience-list"><article class="experience-item reveal"><div class="experience-date">2026 — PRESENT</div><div><h3>IT Engineer · Algorithm Design</h3><p class="experience-place">Hyele Limited <span>·</span> Hong Kong Science Park</p><p>Develop machine-learning algorithms for real-time pipeline condition assessment, from transient-signal processing and model validation to neural-network inference and sensor optimization.</p></div><span class="experience-number">01</span></article><article class="experience-item reveal"><div class="experience-date">2023 — 2026</div><div><h3>MPhil Researcher · Applied AI for Smart Infrastructure</h3><p class="experience-place">HKUST <span>·</span> Civil and Environmental Engineering</p><p>Built reproducible simulation-to-field experiments for leak diagnosis and a contrastive, differentiable framework for sparse sensor selection.</p></div><span class="experience-number">02</span></article><article class="experience-item reveal"><div class="experience-date">2022 — 2023</div><div><h3>Backend Engineer · ML + Backend</h3><p class="experience-place">Yuzhi Tech Co., Ltd. <span>·</span> Beijing</p><p>Built Java/Spring Boot services and integrated ML inference into a production digital-human system; contributed to a secondary-market knowledge graph project.</p></div><span class="experience-number">03</span></article></div><div class="education-line reveal"><span>EDUCATION</span><p>MPhil, Civil &amp; Environmental Engineering · HKUST, 2026</p><p>BEng, Computer Science &amp; Technology · North China University of Technology, 2022</p></div></div></section>
+
+      <section class="evidence-section section-pad" id="evidencegraph" aria-labelledby="evidence-title"><div class="shell evidence-grid"><div class="evidence-copy reveal"><p class="section-kicker">SIDE PROJECT / 04</p><h2 id="evidence-title">A better way<br />to <em>read the evidence.</em></h2><p>EvidenceGraph is my research-paper reading project. It helps turn a PDF into an explorable set of passages and relationships, so a question can lead back to the source rather than ending at an answer.</p><p class="evidence-small">It is a live prototype for more inspectable scientific reading—not a substitute for checking the paper yourself.</p><a class="button button-light" href="https://evidence.donquiry.com/" target="_blank" rel="noopener noreferrer">Explore EvidenceGraph <span aria-hidden="true">↗</span></a></div><div class="evidence-diagram reveal" aria-label="EvidenceGraph concept: paper to passages to relationships to an answer"><div class="evidence-diagram-label">READING, WITH A TRAIL</div><div class="evidence-flow"><div><span>01</span><strong>PAPER</strong><small>Start with the document</small></div><div><span>02</span><strong>PASSAGES</strong><small>Locate the source</small></div><div><span>03</span><strong>RELATIONSHIPS</strong><small>Explore connections</small></div><div><span>04</span><strong>ANSWER</strong><small>Follow the evidence</small></div></div><div class="evidence-diagram-footer">QUESTION <span>→</span> SOURCE <span>→</span> UNDERSTANDING</div></div></div></section>
+
+      <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid reveal"><div><p class="section-kicker">CONTACT / 05</p><h2 id="contact-title">Curious about<br /><em>the next question?</em></h2></div><div class="contact-right"><p>I’m interested in PhD opportunities around trustworthy machine learning, sensing, scientific ML, and intelligent infrastructure. If our questions overlap, I’d love to talk.</p><div class="contact-actions"><a href="mailto:dhanaf@connect.ust.hk">Email me <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/don-h-7abb80296/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="shell footer-inner"><span>© <span id="year">2026</span> Dongyu Han</span><span>Research, grounded in the real world.</span><a href="#top">Back to top ↑</a></div></footer>
+  </body>
+</html>
