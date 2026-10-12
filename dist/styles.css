@@ -225,7 +225,10 @@ figure,p,h1,h2,h3{margin:0}
  .qleak-diagram-wrap{padding:12px}
  .chapter-conclusion h3{font-size:clamp(2rem,9vw,3rem)}
  .result-strip,.comparison{padding:23px}
- .result-values{gap:12px}
+ .result-strip{grid-template-columns:minmax(0,1fr)}
+ .result-strip>*{min-width:0}
+ .result-values{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;white-space:normal}
+ .result-values small{line-height:1.35}
  .result-values strong{font-size:2.55rem}
  .result-arrow{font-size:1.2rem}
  .comparison-row{grid-template-columns:1fr 50px;gap:8px 14px}

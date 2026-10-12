@@ -10,7 +10,7 @@
   <meta property="og:description" content="From hydraulic signals to more reliable decisions. Research, publications, and engineering work by Dongyu Han." />
   <link rel="canonical" href="https://donquiry.com/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/styles.css?v=20261012-transient" />
   <script src="/app.js" defer></script>
   <title>Dongyu Han — Research in intelligent infrastructure</title>
 </head>
@@ -30,7 +30,7 @@
         <div class="hero-copy reveal">
           <p class="overline hero-overline">Dongyu “Don” Han <span class="overline-divider">/</span> Research engineer</p>
           <h1 id="hero-title">A network is vast.<br /><span>Our view is small.</span></h1>
-          <p class="hero-lede">A pressure wave can travel through an entire water network. We only hear it at a handful of sensors. My research asks what those fragments can tell us—and where we should listen in the first place.</p>
+          <p class="hero-lede">A rapid valve closure launches a transient pressure wave through the pipes. We record the resulting pressure response at only a handful of sensors. My research asks what those signals can reveal about a leak—and where we should measure them.</p>
           <div class="hero-actions"><a class="pill-button pill-button-light" href="#research">Follow the story <span aria-hidden="true">↓</span></a><a class="subtle-link" href="#evidencegraph">Explore a side project <span aria-hidden="true">↘</span></a></div>
         </div>
         <figure class="hero-figure reveal">
@@ -40,86 +40,86 @@
               <desc id="beacon-desc">A simplified view of the Beacon Hill pipe branches. Eight yellow squares mark measurement locations along the network.</desc>
               <g class="diagram-branch">
                 <path d="M100 545V112H780L842 165V540L870 575V640H830"/>
-                <path d="M317 178V271H345V150H723L790 201V516L827 565V640H830"/>
-                <path d="M317 178V150H345"/>
+                <path d="M317 178V271H345V150H723L790 201V440L830 485V640"/>
+                <path d="M680 112V150"/>
               </g>
               <g class="diagram-node"><circle cx="100" cy="545" r="12"/><circle cx="317" cy="178" r="12"/><circle cx="680" cy="112" r="12"/><circle cx="830" cy="640" r="12"/></g>
-              <g class="diagram-sensor"><rect x="87" y="264" width="26" height="26" rx="4"/><rect x="530" y="99" width="26" height="26" rx="4"/><rect x="740" y="99" width="26" height="26" rx="4"/><rect x="829" y="207" width="26" height="26" rx="4"/><rect x="695" y="137" width="26" height="26" rx="4"/><rect x="777" y="544" width="26" height="26" rx="4"/><rect x="530" y="137" width="26" height="26" rx="4"/><rect x="304" y="225" width="26" height="26" rx="4"/></g>
+              <g class="diagram-sensor"><rect x="87" y="264" width="26" height="26" rx="4"/><rect x="530" y="99" width="26" height="26" rx="4"/><rect x="740" y="99" width="26" height="26" rx="4"/><rect x="829" y="207" width="26" height="26" rx="4"/><rect x="695" y="137" width="26" height="26" rx="4"/><rect x="817" y="544" width="26" height="26" rx="4"/><rect x="530" y="137" width="26" height="26" rx="4"/><rect x="304" y="225" width="26" height="26" rx="4"/></g>
               <g class="diagram-label"><text x="79" y="598">INLET</text><text x="669" y="83">PIPE NETWORK</text></g>
             </svg>
           </div>
-          <figcaption><strong>Eight places to listen.</strong><span>Each yellow square is a measurement point.</span></figcaption>
+          <figcaption><strong>Eight measurement points.</strong><span>Each yellow square marks a pressure sensor.</span></figcaption>
         </figure>
       </div>
       <div class="shell hero-bottom"><span>HKUST MPhil · 2026</span><span class="hero-bottom-line"></span><span>Scroll to explore ↓</span></div>
     </section>
 
     <section class="intro-section section-pad" id="research" aria-labelledby="research-title">
-      <div class="shell intro-grid reveal"><p class="overline">The challenge</p><div><h2 id="research-title">The pipes are visible.<br /><span>The failure is not.</span></h2><p>A leak leaves a trace in the pressure waves moving through these branches. But real leak examples are scarce, and every additional sensor costs money and effort. That leads to two connected questions: how can a model learn from limited real signals, and which signals should we collect?</p></div></div>
+      <div class="shell intro-grid reveal"><p class="overline">The challenge</p><div><h2 id="research-title">The network is mapped.<br /><span>The leak is not.</span></h2><p>A leak can change how transient pressure waves reflect and scatter through the pipes. But labeled field measurements are scarce, and every additional sensor costs money and effort. That leads to two connected questions: how can a model learn from limited measured responses, and where should we place the sensors?</p></div></div>
     </section>
 
     <section class="research-chapter chapter-transfer section-pad" aria-labelledby="transfer-title">
       <div class="shell chapter-grid">
         <div class="chapter-copy reveal">
           <p class="overline"><span class="chapter-number">01</span> Learn across the gap</p>
-          <h2 id="transfer-title">Start in simulation.<br /><span>Listen in reality.</span></h2>
-          <p>We can simulate many leak events, but collect only a small number in the field. Simulation gives a model a place to begin; the real measurements tell us which patterns survive contact with the physical network.</p>
-          <p>I adapted a model trained on simulated pressure waves using limited experimental signals. Then I examined which moments and sensors it relied on, rather than accepting a prediction without its reasoning trail.</p>
+          <h2 id="transfer-title">Start in simulation.<br /><span>Test in the field.</span></h2>
+          <p>We can simulate many leak scenarios, but collect only a small number of labeled transient pressure responses in the field. Simulations give a model a starting point; measured responses let us test and adapt it to the physical network.</p>
+          <p>I fine-tuned models trained on simulated transients using limited experimental measurements. I then used Integrated Gradients to inspect which sensor–time regions contributed most to their predictions.</p>
           <span class="inline-reference">Transfer learning · Interpretable leak diagnosis</span>
         </div>
         <div class="chapter-media">
           <figure class="data-figure signal-figure reveal">
-            <div class="data-figure-top"><span>Two ways to hear a pressure wave</span><span>Conceptual view</span></div>
+            <div class="data-figure-top"><span>Transient pressure responses</span><span>Conceptual view</span></div>
             <div class="signal-stack">
               <div class="signal-item">
-                <div class="signal-item-heading"><strong>Simulated</strong><span>Clean structure, sharp reflections</span></div>
+                <div class="signal-item-heading"><strong>Simulated</strong><span>Idealized response and reflections</span></div>
                 <svg viewBox="0 0 800 150" role="img" aria-label="Illustrative simulated pressure response with abrupt peaks, reflections and a later trough">
                   <path class="signal-baseline" d="M0 76H800"/>
                   <path class="signal-path signal-path-sim" d="M0 85H56L60 30L65 22L79 22L86 50L92 55L95 70H166L170 76L176 105L186 105L192 76L204 76L215 52L226 52L235 78L245 78L262 44L280 41L291 74L306 62L317 24L327 17L336 47L348 51L362 87L373 110L391 110L404 72L413 74L429 122L449 124L462 97L477 86L495 111L506 99L520 83L537 105L548 87L563 107L583 112L602 136L624 137L645 104L662 121L678 124L695 90L715 78L733 116L747 92L763 41L776 37L790 70L800 71"/>
                 </svg>
               </div>
               <div class="signal-item">
-                <div class="signal-item-heading"><strong>Measured</strong><span>Related shape, with irregularities and noise</span></div>
+                <div class="signal-item-heading"><strong>Measured</strong><span>Irregular response and measurement noise</span></div>
                 <svg viewBox="0 0 800 150" role="img" aria-label="Illustrative measured pressure response with an uneven onset, shifted reflections and noisier later oscillations">
                   <path class="signal-baseline" d="M0 76H800"/>
                   <path class="signal-path signal-path-measured" d="M0 84L12 81L20 87L31 82L43 86L54 80L64 71L70 48L77 34L82 40L89 65L97 59L104 76L113 69L122 80L132 75L142 84L150 82L159 88L168 80L177 91L187 101L196 94L205 87L214 94L226 65L236 72L245 58L254 70L262 64L270 83L280 72L292 48L304 59L312 42L321 51L334 65L344 59L355 75L364 96L377 89L388 111L398 100L407 117L418 85L429 93L438 119L448 112L460 133L471 108L482 123L491 101L500 113L512 89L521 98L533 85L542 104L554 95L564 111L574 105L586 122L594 117L608 137L617 126L629 140L641 120L650 129L664 109L677 118L689 96L703 106L716 80L727 91L738 71L746 86L757 52L766 63L776 49L787 72L800 66"/>
                 </svg>
               </div>
             </div>
-            <figcaption>These are illustrative shapes inspired by the two kinds of pressure response—not recorded data or a matched pair.</figcaption>
+            <figcaption>Illustrative waveforms only—not recorded data, calibrated signals, or a matched simulation–measurement pair.</figcaption>
           </figure>
-          <div class="story-note reveal"><span>THE QUESTION</span><p>Can what the model learns from a clean simulation still help when the signal becomes imperfect?</p></div>
+          <div class="story-note reveal"><span>THE QUESTION</span><p>Can features learned from simulated transients still help when the model meets measured responses?</p></div>
         </div>
       </div>
-      <div class="shell chapter-conclusion reveal"><span class="overline">What changed</span><h3>With a small amount of real data, the model became much better at locating leaks in this test network.</h3></div>
-      <div class="shell result-strip reveal" aria-label="Leak localization result in Beacon Hill evaluation"><div><span class="result-label">Leak-localization error</span><p>Across 17 experimental cases</p></div><div class="result-values"><span><strong>13.51</strong> m <small>Direct test</small></span><span class="result-arrow" aria-hidden="true">→</span><span><strong>1.02</strong> m <small>After adaptation</small></span></div><p class="result-caveat">Mean absolute error in this evaluation. Lower is better; results depend on the dataset and experimental setup.</p></div>
+      <div class="shell chapter-conclusion reveal"><span class="overline">What changed</span><h3>On the original experimental dataset, fine-tuning substantially reduced the best model’s leak-location error.</h3></div>
+      <div class="shell result-strip reveal" aria-label="Leak localization result in Beacon Hill evaluation"><div><span class="result-label">Best leak-location MAE</span><p>Transformer model · 17 experimental scenarios</p></div><div class="result-values"><span><strong>13.51</strong> m <small>Direct simulation-to-field test</small></span><span class="result-arrow" aria-hidden="true">→</span><span><strong>1.02</strong> m <small>After field-data fine-tuning</small></span></div><p class="result-caveat">Mean absolute error on this evaluation; lower is better. These are best-model results, not a general field-performance guarantee.</p></div>
     </section>
 
     <section class="research-chapter chapter-sensing section-pad" aria-labelledby="sensing-title">
       <div class="shell chapter-grid chapter-grid-reverse">
         <div class="chapter-copy reveal">
-          <p class="overline"><span class="chapter-number">02</span> Choose where to listen</p>
+          <p class="overline"><span class="chapter-number">02</span> Choose where to measure</p>
           <h2 id="sensing-title">When you cannot<br /><span>measure everywhere.</span></h2>
-          <p>Even a strong model is limited by what it can hear. In a larger network, adding sensors at every node is impractical; each location has to earn its place.</p>
+          <p>Even a strong model is limited by what its sensors record. In a larger network, adding sensors at every node is impractical; each location has to earn its place.</p>
           <p>I built a method that learns which subset of locations is most useful for distinguishing leak events. The network below shows the branches and nodes; the changing selection probabilities show the model making that choice during training.</p>
           <span class="inline-reference">Contrastive learning · Sensor selection</span>
         </div>
         <div class="chapter-media">
           <figure class="data-figure network-figure reveal">
-            <div class="data-figure-top"><span>The second network</span><span>Branches and nodes</span></div>
+            <div class="data-figure-top"><span>Q-Leak network</span><span>Branches and nodes</span></div>
             <div class="qleak-diagram-wrap"><svg class="qleak-diagram" viewBox="0 0 1000 610" role="img" aria-labelledby="qleak-title qleak-desc">
               <title id="qleak-title">Simplified Q-Leak network</title>
-              <desc id="qleak-desc">A minimal map of the Q-Leak pipe branches and eighteen network nodes, drawn without pipe-material or diameter details.</desc>
-              <g class="diagram-branch"><path d="M85 95H680L825 95V525"/><path d="M355 195H680L730 245V515H355V195"/><path d="M465 195V302"/><path d="M355 375H455"/><path d="M680 245H730"/><path d="M355 430H425"/></g>
-              <g class="diagram-node"><circle cx="85" cy="95" r="10"/><circle cx="680" cy="95" r="10"/><circle cx="825" cy="95" r="10"/><circle cx="825" cy="275" r="10"/><circle cx="825" cy="525" r="10"/><circle cx="730" cy="515" r="10"/><circle cx="730" cy="385" r="10"/><circle cx="730" cy="245" r="10"/><circle cx="680" cy="195" r="10"/><circle cx="465" cy="195" r="10"/><circle cx="465" cy="302" r="10"/><circle cx="355" cy="195" r="10"/><circle cx="355" cy="285" r="10"/><circle cx="355" cy="375" r="10"/><circle cx="455" cy="375" r="10"/><circle cx="355" cy="430" r="10"/><circle cx="425" cy="430" r="10"/><circle cx="355" cy="515" r="10"/></g>
+              <desc id="qleak-desc">A minimal map of the Q-Leak outer run and intermediate loop, connected by a short pipe between them. Eighteen network nodes are shown without pipe-material or diameter details.</desc>
+              <g class="diagram-branch"><path d="M85 95H825V525"/><path d="M355 195H680L730 245V515H355V195"/><path d="M730 300H825"/><path d="M465 195V302"/><path d="M355 375H455"/><path d="M680 245H730"/><path d="M355 430H425"/></g>
+              <g class="diagram-node"><circle cx="85" cy="95" r="10"/><circle cx="680" cy="95" r="10"/><circle cx="825" cy="300" r="10"/><circle cx="825" cy="445" r="10"/><circle cx="825" cy="525" r="10"/><circle cx="730" cy="300" r="10"/><circle cx="730" cy="245" r="10"/><circle cx="680" cy="245" r="10"/><circle cx="680" cy="195" r="10"/><circle cx="465" cy="195" r="10"/><circle cx="465" cy="302" r="10"/><circle cx="355" cy="195" r="10"/><circle cx="355" cy="285" r="10"/><circle cx="355" cy="375" r="10"/><circle cx="455" cy="375" r="10"/><circle cx="355" cy="430" r="10"/><circle cx="425" cy="430" r="10"/><circle cx="730" cy="515" r="10"/></g>
             </svg></div>
-            <figcaption>Each circle is a node in the network. The question is where measurements would be most useful.</figcaption>
+            <figcaption>The short link joins the outer run to the intermediate loop. Each circle marks a modeled node, not an installed sensor.</figcaption>
           </figure>
           <figure class="data-figure reveal"><div class="data-figure-top"><span>Selection over training</span><span>K = 5 · SNR = 0 dB</span></div><img src="/assets/sensor-selection-probabilities.png" alt="Heatmap showing how selection probabilities for Q-Leak sensor IDs evolve over training epochs, including warm-up, exploration and push stages." width="1027" height="660" loading="lazy" /><figcaption>As training progresses, the model gives some candidate locations a consistently higher chance of being selected.</figcaption></figure>
         </div>
       </div>
       <div class="shell chapter-conclusion reveal"><span class="overline">What changed</span><h3>Choosing sensors for the task—not just spreading them across the pipes—can improve what the model recognizes.</h3></div>
-      <div class="shell comparison reveal" aria-label="Q-Leak classification accuracy comparison"><div class="comparison-head"><div><span class="result-label">Classification accuracy</span><p>One simulated Q‑Leak setting · 8 sensors · SNR = 0 dB</p></div><span class="comparison-unit">%</span></div><div class="comparison-row"><span>Information-based selection</span><div class="comparison-track"><span style="--bar-width: 73.93%"></span></div><strong>73.93</strong></div><div class="comparison-row comparison-row-accent"><span>Task-aligned selection</span><div class="comparison-track"><span style="--bar-width: 86.62%"></span></div><strong>86.62</strong></div><p class="result-caveat">In very noisy, tighter-budget conditions, the information-based approach can still perform better. This is a comparison in simulated data, not a field-deployment claim.</p></div>
+      <div class="shell comparison reveal" aria-label="Q-Leak classification accuracy comparison"><div class="comparison-head"><div><span class="result-label">Classification accuracy</span><p>One simulated Q‑Leak setting · 8 sensors · SNR = 0 dB</p></div><span class="comparison-unit">%</span></div><div class="comparison-row"><span>Information-based selection (MI/MaxDet)</span><div class="comparison-track"><span style="--bar-width: 73.93%"></span></div><strong>73.93</strong></div><div class="comparison-row comparison-row-accent"><span>Task-aligned selection (DCSS)</span><div class="comparison-track"><span style="--bar-width: 86.62%"></span></div><strong>86.62</strong></div><p class="result-caveat">At some lower-SNR, tighter-budget settings, the MI/MaxDet baseline performs better. This comparison uses simulated responses, not field measurements.</p></div>
     </section>
 
     <section class="publication-section section-pad" id="publication" aria-labelledby="publication-title"><div class="shell publication-grid"><div class="reveal"><p class="overline">Publication</p><h2 id="publication-title">The work<br /><span>behind the story.</span></h2><p>The simulation-to-field study is published in <i>Water Research</i>. If you want the methods, assumptions, and full results, start here.</p></div><article class="publication-card reveal"><p>Water Research · 2026</p><h3>Explainable simulation-to-field transfer learning for transient-based leak detection in water distribution networks</h3><p>Dongyu Han, Oussama Choura, Muhammad Waqar, Moez Louati, Dai Linhan &amp; Mohamed Salah Ghidaoui</p><a class="inline-link" href="https://doi.org/10.1016/j.watres.2026.126464" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a></article></div></section>
